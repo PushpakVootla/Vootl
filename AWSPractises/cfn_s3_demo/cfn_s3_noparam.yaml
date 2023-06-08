@@ -1,0 +1,16 @@
+Resources:
+  MyFirstS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: "vp-cfn-demo-12"
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0bef6cc322bfff646
+      InstanceType: t2.micro
+      BlockDeviceMappings:
+        - DeviceName: /dev/sda1
+          Ebs:
+            VolumeSize: 20
+
+
