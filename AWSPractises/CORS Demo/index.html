@@ -12,8 +12,8 @@
     <div id="fetchedcontent"/>
 	<script>
 		var fetchedcontent = document.getElementById("fetchedcontent");
-
-		fetch('http://s3-cors-demo-rt-b4-cross-origin-bucket.s3-website.ap-south-1.amazonaws.com/fetchedpage.html')
+		
+		fetch('https://corsdemo-2.s3.amazonaws.com/fetchedpage.html')
 		.then((response) => {
 			return response.text();
 		})
