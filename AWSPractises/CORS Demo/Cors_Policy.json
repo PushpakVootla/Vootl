@@ -1,0 +1,15 @@
+[
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "http://bucket_url"
+        ],
+        "ExposeHeaders": [
+        ]       
+    }
+]
